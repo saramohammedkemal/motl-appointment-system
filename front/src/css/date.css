@@ -1,0 +1,203 @@
+
+.date-box{
+    background-color:#19395B;
+    margin: 7% 5% ;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+    opacity: 0.9;
+    padding: 15px 80px 50px;
+}
+
+.date-box section{
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1px; */
+  box-shadow: 2px 2px 3px rgb(27, 8, 78), -1px -1px 5px rgba(150, 147, 147, 0.897);
+    padding: 1% 3%;
+}
+
+.date-box  h2{
+   text-align: left;
+}
+
+.date-box h1{
+    color: white;
+}
+
+.date-box section div{
+    margin: 1% 2% 4% !important ;
+    background-color:#19395B;
+    cursor: pointer;
+    text-align: center;
+    min-width: 8%;
+   
+}
+
+.date-box section div:active{
+    box-shadow: 2px 2px 3px rgb(239, 238, 241), -1px -1px 5px rgba(21, 3, 61, 0.897);
+
+}
+
+.slot-full {
+  background-color: white !important;
+  cursor: not-allowed;
+  /* opacity: 0.6; */
+  font-weight: 600;
+  border-radius: 20px;
+  padding-top: 20px !important ;
+     width: 10%;
+
+    box-shadow: 2px 2px 3px rgb(27, 8, 78), 3px 3px 5px rgba(241, 236, 236, 0.897);
+}
+
+.slot-full p{
+    color: red;
+}
+
+.calender{
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.morning{
+    padding: 0px 50px ;
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+.afternoon{
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+}
+
+.day-date-div{
+    margin: 15px 20px!important;
+    width: 10%;
+    padding: 20px 10px !important;
+    border-radius: 20px;
+    box-shadow: 2px 2px 3px rgb(27, 8, 78), 3px 3px 5px rgba(241, 236, 236, 0.897);
+    background-color: white !important;
+    opacity: 0.9;
+    text-decoration: none;
+    color: black;
+}
+
+.selected{
+        background-color:#19395B;
+    box-shadow: 2px 2px 3px rgb(27, 8, 78), 3px 3px 5px rgba(241, 236, 236, 0.897);
+     margin: 15px 20px!important;
+    width: 10%;
+    padding: 20px 10px;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* .calender select{
+    height: 40px;
+    margin: 25px 0px 0px 580px ;
+    padding: 10px;
+        background-color:#19395B;
+    color: white;
+} */
+
+.morning-slots{
+    padding: 15px 20px 2px ;
+}
+
+.morning-div{
+    display: block;
+     width: 10%;
+    padding: 20px 10px 25px;
+    box-shadow: 2px 2px 3px rgb(27, 8, 78), 3px 3px 5px rgba(241, 236, 236, 0.897);
+    background-color: white !important;
+    opacity: 0.9;
+    border-radius: 20px;
+    margin: 0px 50px 10px !important;
+
+}
+
+.morning-slots-div{
+    display: none;
+   
+}
+
+.afternoon-div{
+    display: block;
+    margin: 15px 30px!important;
+    width: 10%;
+    padding: 20px 10px;
+    border-radius:  20px ;
+     background-color: white !important;
+    opacity: 0.9;
+    box-shadow: 2px 2px 3px rgb(27, 8, 78), 3px 3px 5px rgba(241, 236, 236, 0.897);
+}
+
+.afternoon-slots-div{
+    display: none;   
+}
+
+.day{
+    margin-bottom: 15%;
+    font-weight: bold;
+}
+
+.available-slots{
+    margin-top: 15%;
+    color: green;
+    font-weight: 600;
+}
+
+@media (max-width: 960px){
+    .date-box{
+    margin: 2% 3% ;
+    padding: 15px 30px 50px;
+
+    }
+
+    .date-box section div{
+        /* height: 50px; */
+        font-size: 15px;
+        margin: 1% 3% 4% !important ;
+
+    }
+}
+
+@media (max-width:570px){
+    .date-box{
+        margin: 2% 0;
+    }
+
+    .date-box h2{
+        font-size: 23px;
+    }
+
+    .date-box h1{
+        font-size: 25px;
+    }
+
+     .date-box section div{
+      width: 20%;
+
+    }
+
+    .morning-div{
+    padding: 20px 10px 40px;
+    font-size: 13px !important;
+
+    }
+
+    .afternoon-div{
+    font-size: 13px !important;
+    padding: 20px 10px 40px;
+    
+
+
+    }
+
+
+
+}
+

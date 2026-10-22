@@ -1,0 +1,268 @@
+.header{
+    background-color:#0d0d49;
+    color: white;
+    padding: 30px 0px 20px;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    box-shadow: 1px 1px 1px white, -1px -1px 7px rgb(18, 6, 46);
+    word-spacing: 10px;
+    left: 0;
+}
+
+.header h1{
+    opacity: 0.8;
+
+}
+
+.home-header{
+      display: flex;
+    background-color:#0d0d49;
+    color: white;
+    padding: 10px 0px 20px 50px ;
+    position: fixed;
+    font-weight: bold;
+    z-index: 1000;
+    opacity: 0.9;
+    right: 0;
+    box-shadow: 1px 1px 1px white, -1px -1px 7px white;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    margin: 10px 200px 0px 40px;
+    padding: 0px;
+    opacity: 0.7;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    word-spacing: 4px;
+
+}
+
+.home-header-link{
+    padding: 30px 0px 0px;
+    font-weight: 500;
+    text-decoration: none ;
+    margin-right: 150px;
+    font-size: 17px; 
+    color: white;
+    list-style: none;
+}
+
+
+.active-link{
+    text-decoration: underline ; 
+    text-decoration-thickness:3px ;
+    text-decoration-color: white;
+    text-decoration-style: wavy;
+    font-size: 16px;
+    opacity: 0.8;
+    margin-right: 150px;
+    padding: 25px 0px 0px;
+    font-weight: 500;
+   
+    list-style: none;
+    color: white;
+}
+
+.home-header li:hover{
+   opacity: 0.8;
+}
+
+.transport-logo{
+    width: 230px;
+    margin: 0px 0px 0px 300px ;
+    height: 55px;
+    cursor: pointer;
+    
+}
+
+.phone-home-header{
+    display: none;
+}
+
+.menu-bar{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+.none{
+    display: none;
+}
+
+.x{
+    display: none;
+}
+
+@media (max-width:1180px) {
+    .logo{
+    margin: 10px 150px 0 0;
+    font-size: 16px;
+}
+
+.home-header-link{
+    margin-right: 110px;
+}
+
+.active-link{
+    margin-right: 110px;
+}
+}
+
+@media (max-width:960px){
+    .home-header{
+        display: none;
+    }
+
+    .phone-home-header{
+        display: block;
+        background-color:#0d0d49;
+        display: flex !important;
+        padding: 10px 0px 10px 50px ;
+    }
+
+    .menu-bar{
+        display: block;
+        background-color:#0d0d49;
+        display: flex;
+        padding: 10px 0 20px 150px;
+    }
+
+    .menu{
+        display: block;
+    width: 60px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.x{
+    display: block;
+    width: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    height: 25px; 
+}
+
+.menu-icon{
+    width: 30%;
+
+}
+    .logo{
+    font-size: 18px;
+    width: 50%;
+    margin: 10px 400px 0 0;
+    padding: 0px;
+    }
+
+.home-header-link{
+    font-size: 17px;
+    margin-right: 80px;
+
+}
+
+.active-link{
+    font-size: 18px;
+    margin-right: 80px;
+
+}
+}
+
+
+@media (max-width:768px){
+    .home-header{
+        display: none;
+    }
+    .phone-home-header{
+        padding: 10px 0px 10px 50px ;
+    
+}
+
+
+.menu{
+    width: 60px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.menu-icon{
+    width: 30%;
+
+}
+    .logo{
+    font-size: 18px;
+    width: 50%;
+    margin: 10px 200px 0px 0px;
+    padding: 0px;
+    }
+
+     .menu-bar{
+        display: block;
+        background-color:#0d0d49;
+        display: flex;
+        
+        padding: 10px 0 20px 90px;
+    }
+
+    .menu{
+        display: block;
+    width: 60px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.x{
+    display: block;
+    width: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    height: 25px;
+}
+
+.home-header-link{
+    font-size: 15px;
+    margin-right: 60px;
+
+}
+
+.active-link{
+    font-size: 16px;
+    margin-right: 60px;
+
+}
+}
+
+@media (max-width:560px) {
+    .home-header{
+    padding: 10px 0px 20px 0px !important;
+    margin-left: 0;
+
+    }
+
+
+     .logo{
+    font-size: 15px;
+    width: 60%;
+    margin: 10px 40% 0 0 ; 
+    /* padding: 0 !important; */
+
+    }
+
+     .menu-bar{        
+        padding: 10px 0 20px 25px;
+    }
+
+    .active-link{
+        margin-right: 40px;
+    }
+
+    .home-header-link{
+        margin-right: 40px;
+    }
+}
+

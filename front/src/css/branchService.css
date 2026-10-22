@@ -1,0 +1,333 @@
+.branches-section{
+     background:
+linear-gradient(rgba(0, 0, 0, 0.5),
+rgba(0,0,0,0.5)),
+url(../images/homepage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-top: 10px;
+    height: 100vh;
+}
+
+.branches-container{
+    margin:9% 15% 2%;
+    background-color: white;
+    opacity: 0.8;
+    padding: 1% 0 1%;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+    border-radius: 0px 0px 100px;
+}
+
+.branches-container h2{
+  padding: 40px 80px 0px ;
+  font-size: 30px;
+  opacity: 0.8;
+  color: rgb(9, 9, 110);
+  word-spacing: 5px;
+  text-align: left;
+
+
+}
+
+.branch{
+   background-image: url(../images/branch.png);
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 10%;
+   height: 100px;
+   margin: 30px auto 100px;
+   cursor: pointer;
+}
+
+.branch p{
+    padding-top: 105px;
+    font-weight: bold;
+    color:#0488DB;
+    font-size: 20px;
+}
+
+.kality-phone{
+    display: none;
+}
+
+.first{
+    display: flex;
+}
+
+.second{
+    display: flex;
+}
+
+.service-section{
+       background:
+linear-gradient(rgba(0, 0, 0, 0.5),
+rgba(0,0,0,0.5)),
+url(../images/homepage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    /* padding-top: 10px; */
+    height: 100vh;
+    outline: 1px solid green !important;
+
+
+}
+
+.service-box{
+    margin: 140px 18% 0px;
+    padding: 3px 20px;
+    width: 60%;
+    /* height: 70%; */
+    background-color:#19395B;
+    box-shadow: 3px 2px 2px rgb(233, 232, 240), -1px -1px 4px rgb(16, 5, 66);
+    opacity: 0.9;
+    border-radius: 0px 0px 100px;
+    
+}
+
+.service-box h2{
+    font-size: 30px;
+    text-align: left;
+    margin: 5% 10%;
+    color: rgb(14, 14, 51);
+    word-spacing: 8px;
+    color: white;
+
+}
+
+.services{
+    display: flex;
+    margin: 10px 10% 50px 2% ;
+
+}
+
+.services div{
+    height: 100px;
+    margin: 0px auto 70px;
+    width: 15%;
+    cursor: pointer;
+}
+
+.services p{
+    padding-top: 97%;
+    font-weight: bold;
+    color: white;   
+    /* width: 100%; */
+    font-size: 19px;
+
+}
+
+.license-issuance{
+    background-image: url(../images/licenseissuance.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+/* .license-issuance p{
+    padding-top: 100%;
+} */
+
+.license-renewal{
+    background-image: url(../images/driverlicenserenewal.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* .license-renewal p{
+    padding-top: 100%;
+    width: 100%;
+    
+} */
+
+
+.owner-transfer{
+    background-image: url(../images/ownership.png);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.owner-transfer-phone{
+    background-image: url(../images/ownership.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.vehicle-inspection-phone{
+    background-image: url(../images/vehicleinspection.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.inspection{
+    background-image: url(../images/vehicleinspection.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.services-on-phone{
+    display: none;
+}
+
+
+/* .inspection p{
+    padding-top:100%;
+} */
+
+.registration{
+    background-image: url(../images/vehicleregistration.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.other-service{
+    background-image: url(../images/others.png);
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width:1240px) {
+
+    .service-box{
+        width: 70%;
+        margin: 15%;
+    }
+    .services div{
+    height: 80px;
+    width: 13%;
+}
+
+.services p{
+    padding-top: 120%;
+    font-size: 16px;
+}
+}
+
+@media (max-width:880px){
+    .service-box{
+        margin: 5% 8%;
+        width: 80%;
+    }
+
+    .services div{
+        height: 75px;
+        width: 18%;
+    }
+
+    .services p{
+        padding-top: 89%;
+        font-size: 18px;
+    }
+
+    .services-on-phone{
+        display: block;
+        display: flex;
+    }
+
+    .owner-transfer{
+        display: none;
+    }
+
+    .inspection{
+        display: none;
+    }
+
+    .branches-container{
+        width: 90%;
+        margin:9% 5% 2%;
+    }
+
+    .branch{
+        width: 11%;
+        height: 80px;
+        margin: 30px auto 100px;
+
+    }
+
+    .branch p{
+        padding-top: 85px;
+    }
+
+    .branches-container h2{
+  padding: 40px 50px 0px ;
+  font-size: 25px;
+  word-spacing: 3px;
+  text-align: left;
+
+
+}
+}
+
+@media (max-width:680px){
+    .service-box{
+        margin: 5%;
+        width: 85%;
+    }
+    .service-box h2{
+        font-size: 25px;
+    }
+
+    .services div{
+        width: 25%;
+        height: 80px;
+    }
+    .services p{
+        padding-top: 100%;
+    }
+
+    .branches-container h2{
+        padding: 10% 10% 0;
+        font-size: 22px;
+    }
+}
+
+@media (max-width:440px){
+    .service-box{
+        padding: 1px 0;
+        margin: 40px 20px;
+    }
+
+    .services div{
+        width: 25%;
+
+    }
+
+    .services p{
+        padding-top: 140%;
+    }
+
+    .branches-container{
+        margin:6% 2% 5%;
+        width: 96%;
+    }
+
+    .branches-container h2{
+        padding: 10% 0 0 8%;
+        font-size: 20px;
+    }
+
+    .kality{
+        display: none;
+    }
+
+    .kality-phone{
+        display: block;
+    }
+
+    .branch{
+        width: 13%;
+        height: 75px;
+        margin: 30px auto 80px;
+
+    }
+
+    .branch p{
+        font-size: 18px ;
+    }
+}

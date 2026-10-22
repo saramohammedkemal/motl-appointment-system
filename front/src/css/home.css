@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    /* max-width: 100% !important; */
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* outline: 1px solid red; */
+    /* overflow-x: hidden; */
+}
+
+.home{
+    text-align: left ;
+    background:
+linear-gradient(rgba(0, 0, 0, 0.5),
+rgba(0,0,0,0.4)),
+url(../images/homepage.png);
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    color: white;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+}
+
+.white{
+    padding: 380px 0px 0px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #f3f2f2;
+    margin-bottom: 0 !important;
+    width: 40% !important;
+    font-size: 45px;
+}
+
+.aqua{
+    font-weight: 700;
+    margin-bottom: 0 !important;
+    text-shadow: 1px 1px 1px #f3f2f2;
+    font-size: 45px;
+    color: #136dce;
+    width: 40% !important;
+}
+
+.home p{
+    margin: 0px 0px 15px 700px;
+    width: 20%;
+} 
+.book-appointment{
+    margin: 0px 0px 0px 700px;
+    cursor: pointer;
+    background-color:#19395B;
+    }
+
+.home button{
+        background-color:#19395B;
+    border: none;
+    color: white;
+    padding: 13px 35px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 1px 1px rgb(237, 247, 240), -1px -1px 1px rgba(115, 116, 119, 0.897);
+
+    word-spacing: 5px;
+    text-shadow: 3px 3px 7px #000000;
+    font-size: 15px; 
+    cursor: pointer;
+}
+
+
+.home button:active{
+ box-shadow: 2px 2px 1px rgb(237, 247, 240), -1px -1px 1px rgba(229, 230, 236, 0.897);
+
+}
+
+@media (max-width:1400px){
+ .white{
+    padding: 380px 0px 0px;
+    font-weight: 700;
+    text-shadow: 1px 1px 1px #f3f2f2;
+    margin-bottom: 0 !important;
+    /* width: 100% !important; */
+    font-size: 43px !important;
+ }
+
+ .aqua{
+    padding: 0px 0px 0px;
+    margin-bottom: 0 !important;
+    text-shadow: 1px 1px 1px #f3f2f2;
+    font-size: 43px !important;
+    /* width: 100% !important; */
+
+}
+
+.home p{
+    margin: 0px 0px 15px 590px;
+    width: 30%;
+    font-size: 15px;
+
+} 
+
+.book-appointment{
+   margin: 0px 0px 0px 590px;
+    cursor: pointer;
+    background-color:#19395B;
+    }
+
+    .home button{
+    background-color:#19395B;
+    border: none;
+    color: white;
+    padding: 13px 30px;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 1px 1px 1px rgb(237, 247, 240), -1px -1px 1px rgba(115, 116, 119, 0.897);
+
+    word-spacing: 5px;
+    text-shadow: 3px 3px 7px #000000;
+    font-size: 13px; /* changed*/
+    cursor: pointer;
+    }
+}
+
+@media(max-width:960px){
+    .white{
+     padding: 380px 0px 0px 0px;
+    font-size: 38px !important;
+    }
+
+    .aqua{
+        font-size: 38px !important;
+    }
+
+    .home p{
+    text-align: left;
+    margin: 0px 0px 15px 360px;
+    font-size: 15px;
+    width: 35%;
+
+} 
+
+.book-appointment{
+    margin: 0px 0px 0px 360px;
+    cursor: pointer;
+    background-color:#19395B;
+    }
+}
+
+@media (max-width:768px){
+ .white{
+     padding: 380px 0px 0px 0px;
+    margin: 0px 0px 0px 200px;
+    font-size: 35px !important;
+ }
+
+ .aqua{
+    margin: 0px 0px 0px 300px;
+    font-size: 35px !important;
+    width: 300px !important;
+}
+
+.home p{
+    margin: 0px 0px 15px 250px;
+    font-size: 15px;
+    width: 40%;
+
+} 
+
+.book-appointment{
+    margin: 0px 0px 0px 250px;
+    }
+
+    .home button{
+    padding: 13px 35px;
+    font-size: 13px; 
+}
+}
+
+@media (max-width:560px) {
+    .white{
+     padding: 280px 0px 0px 0px;
+
+        font-size: 33px !important;
+        width: 250px !important;
+    }
+
+    .aqua{
+        font-size: 33px !important;
+        width: 250px !important;
+    }
+
+    .home p{
+        font-size: 15px;
+        margin: 0px 0px 15px 150px;
+        width: 45%;
+    }
+
+     .book-appointment{
+    margin: 0px 0px 0px 150px;
+    }
+
+    
+    /* .home-box{ */
+        /* background-color: yellow;
+        margin:  200px ;
+    } */
+}
+
+@media (max-width:400px){
+     .white{
+     padding: 280px 0px 0px 0px;
+
+        font-size: 30px !important;
+        width: 240px !important;
+    }
+
+    .aqua{
+        font-size: 30px !important;
+        width: 240px !important;
+    }
+
+    .home p{
+        font-size: 13px;
+        margin: 0px 0px 15px 70px;
+        width: 70%;
+    }
+
+     .book-appointment{
+    margin: 0px 0px 0px 70px;
+    }
+
+}

@@ -1,0 +1,126 @@
+.booking-summary{
+    background-color:#19395B;
+    margin:8% 10% 1%;
+    color: white;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+    opacity: 0.9;
+    padding:1%;
+
+}
+
+.booking-summary button{
+    padding:10px 20px;
+    margin: 20px;
+    
+}
+
+.title{
+    margin: 15px 0px 0px 20px;
+    width: 70%;
+    text-align: left;
+    opacity: 0.8;
+    
+}
+
+.booked-date{
+    padding: 20px 0px;
+}
+
+.booked-time{
+    padding: 20px 0px;
+}
+
+.booking-summary h5{
+    margin: 15px 10px 10px 0px;
+    width: 30%;
+    font-weight: 650;
+    font-size: 16px;
+}
+
+.sections{
+    display: flex;
+}
+
+/* .translate-amh{
+    font-size: 14px;
+    font-weight: 450;
+    margin-top: 5px;
+} */
+
+.booking-summary hr{
+    margin: 10px 20px ;
+}
+
+.queue{
+    background-color:#19395B;
+    margin: 15% 30% 0;
+    padding: 3% 10px 1%;
+    color: white;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+    opacity: 0.9;
+    border-radius: 50px;
+}
+
+.queue h1{
+    margin-bottom: 50px;
+}
+
+
+.queue p{
+    word-spacing: 3px;
+    font-size: 20px;
+    opacity: 0.6;
+}
+
+.logout{
+    padding: 7px 20px;
+    margin: 0 0 13% 10px;
+    font-size: 15px;
+}
+
+@media (max-width:1120px){
+    .queue{
+        margin: 20% 18% 0;
+        padding: 5% 10px 1%;
+    }
+
+    .queue h1{
+        font-size: 28px;
+    }
+
+    .queue p{
+        font-size: 18px;
+    }
+
+    .logout{
+    margin: 0 0 15% 10px;
+
+    }
+}
+
+@media(max-width: 580px){
+    .booking-summary h5{
+        font-size: 15px;
+    }
+
+    .booking-summary h1{
+        font-size: 28px;
+        margin-bottom: 20px;
+        padding-top: 20px;
+    }
+
+     .queue{
+        margin: 20% 10% 0;
+        padding: 5% 10px 1%;
+    }
+
+    .queue h1{
+        font-size: 25px;
+    }
+
+    .queue p{
+        font-size: 15px;
+    }
+}
+
+

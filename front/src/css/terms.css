@@ -1,0 +1,144 @@
+.terms{
+    background-color:#19395B;
+  color: white;
+    margin: 170px 300px 50px;
+    padding: 40px 0 40px 40px ;
+    font-size: 22px;
+    opacity: 0.8;
+    text-align: left;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+
+}
+
+.terms h2{
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 32px;
+}
+
+.terms li{
+    font-size: 22px;
+    margin: 25px 30px;
+    
+}
+
+.help-box{
+    color: white;
+    background-color:#19395B;
+    opacity: 0.8;
+
+    text-align: left;
+    margin: 170px 350px 5px;
+    padding: 50px 30px 50px 30px ;
+}
+
+.help-box h2{
+    text-align: center;
+    font-size: 27px;
+}
+
+.help-box li{
+    font-size: 20px;
+    margin: 0 0 0 70px;
+    padding: 8px ;
+   
+}
+
+.help-box p{
+    margin: 0 0 0 70px;
+    font-size: 18px;
+    padding: 0px 10px 15px;
+   
+}
+
+.descr{
+    font-size: 16px !important;
+}
+
+.bold{
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.not-found{
+    margin: 150px 400px;
+    padding: 150px;
+    font-size: 50px;
+    font-weight: bold;
+    background-color:#0d0d49;
+    color: white;
+    opacity: 0.9;
+    word-spacing: 10px;
+}
+
+@media (max-width:1200px){
+
+    .terms{
+    margin: 200px 200px 50px;
+    padding: 40px 10px 40px 20px ;
+    font-size: 22px;
+}
+
+    .terms h2{    
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.terms li{
+    font-size: 20px;
+    margin: 25px 50px;
+    
+}
+
+.help-box{
+    margin: 170px 200px 5px;
+
+}
+
+.help-box h2{
+    font-size: 25px;
+}
+
+.help-box li{
+    font-size: 18px;
+}
+
+.help-box p{
+    font-size: 15px;
+}
+}
+
+@media (max-width:960px){
+    .terms{
+    margin: 100px 80px 50px;
+    padding: 50px 0 60px 20px ;
+    }
+
+        .terms h2{    
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.terms li{
+    font-size: 18px;
+    margin: 25px 0 0 60px;
+    
+}
+
+.help-box{
+    margin: 50px 80px 5px;
+
+}
+
+.help-box h2{
+    font-size: 25px;
+}
+
+.help-box li{
+    font-size: 18px;
+}
+
+.help-box p{
+    font-size: 15px;
+}
+}

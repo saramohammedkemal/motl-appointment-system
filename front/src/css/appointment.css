@@ -1,0 +1,256 @@
+.check-section{
+     background:
+linear-gradient(rgba(0, 0, 0, 0.5),
+rgba(0,0,0,0.5)),
+url(../images/homepage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-top: 10px;
+    height: 100vh;
+
+}
+
+.check-box{
+    background-color:#19395B;
+    margin: 13% 25% 5% ;
+    padding: 50px 0px 100px;
+    opacity: 0.9;
+    color: white;
+    border-radius: 20px 0px 0px 0px;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), -1px -1px 5px rgba(0, 0, 0, 0.897);
+}
+
+.check-box h2{
+    text-align: left;
+    margin-left: 80px;
+}
+.check-appointment{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.for{
+    margin: 7% 10% ;
+    border-radius: 20px;
+    padding: 7% 0px 50px;
+    box-shadow: 2px 2px 3px rgb(184, 165, 243), 3px 3px 5px rgba(0, 0, 0, 0.897);
+    width: 25%;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.for:active{
+    box-shadow:-1px -1px 5px rgb(184, 165, 243),1px 1px 1px rgba(0, 0, 0, 0.897) ;
+}
+
+/* .for p{
+    width: 78%;
+    padding-left: 15px;
+    margin-top: 10px; 
+    text-align: center;
+} */
+
+.for h3{
+    width: 78%;
+    padding-left: 15px;
+}
+
+.for-someone-section{
+    background:
+    linear-gradient(rgba(0, 0, 0, 0.5),
+    rgba(0,0,0,0.5)),
+    url(../images/homepage.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.for-someone{
+    background-color:#19395B;
+    margin: 10% 23% 3%;
+    padding: 5px 0px 50px 70px;
+    color: white;
+    opacity: 0.9;
+    border-radius: 50px;
+    text-align: left;
+}
+
+.for-someone h5{
+    margin: 0px ;
+    opacity: 0.8;
+    font-size: 25px;
+}
+
+.for-someone button{
+    padding: 8px 20px;
+    margin: 0px;
+    font-size: 15px;
+
+}
+
+.for-someone input{
+    padding: 2% 0 1% 10px;
+    font-size: 15px;
+    width: 88%;
+    margin: 15px 0px 0px;
+}
+
+ .for-someone select{
+    padding: 2% 10px 1%;
+    font-size: 15px;
+}
+
+ .for-someone .phone{
+    padding: 2% 0px 1% 5px;
+    margin: 15px 40px 0 5px;
+    width: 78%;
+}
+
+.for-someone p{
+    margin-bottom: 10px;
+}
+
+.others-logo{
+    width: 14%;
+    margin-left: 300px;
+    /* margin-bottom: 1cap ; */
+    margin-top: 30px;
+}
+
+@media (max-width:1335px){
+.for-someone{
+    margin: 12% 20% 3%;
+}
+
+.for-someone input{
+    width: 80%;
+}
+
+.for-someone .phone{
+    width: 68%;
+}
+
+.others-logo{
+    margin-left: 230px;
+   
+}
+}
+
+@media (max-width:1060px){
+    .check-box{
+    padding: 50px 0px 100px;
+    margin: 15% 15% 5% ;
+    }
+
+    .check-box h2{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.for h3{
+     width: 80%;
+    padding-left: 15px;
+    /* text-align: left; */
+}
+
+.for-someone{
+    margin: 12% 13% 3%;
+    padding: 5px 20px 50px 70px;
+    
+}
+
+.for-someone input{
+    width: 70%;
+}
+
+
+.for-someone .phone{
+    width: 58%;
+    margin: 3% 22% 0 1%;
+}
+
+.others-logo{
+    width: 14%;
+    margin-left: 150px;
+    margin-bottom: 1cap ;
+    margin-top: 30px;
+}
+}
+
+@media (max-width:810px){
+    .for-someone{
+    margin: 12% 5% 3%;
+    }
+
+    .for-someone input{
+    width: 68%;
+}
+
+
+.for-someone .phone{
+    width: 53%;
+    margin: 3% 22% 0 1%;
+}
+}
+
+@media(max-width:620px){
+    .check-box{
+        margin: 20% 5% 5%;
+    }
+
+    .check-box h2{
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .for h3{
+        padding-left: 5px;
+    }
+}
+
+@media (max-width:550px){
+     .for-someone{
+    margin: 12% 3% 3%;
+    padding: 5px 30px 50px 20px;
+
+    }
+
+    .for-someone input{
+    width: 60%;
+}
+
+
+.for-someone .phone{
+    width: 40%;
+    margin: 3% 20% 0 1%;
+}
+
+.for-someone h5{
+    margin: 0px ;
+    opacity: 0.8;
+    font-size: 22px;
+}
+
+.for-someone p{
+    font-size: 12px;
+}
+
+.others-logo{
+    width: 14%;
+    margin-left: 110px;
+   
+}
+
+
+}
+
+

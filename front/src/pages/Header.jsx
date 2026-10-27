@@ -10,20 +10,6 @@ function Header() {
   const [showMenu, setShowMenu] = useState(null)
   const [closeMenu, setCloseMenu] = useState(null)
 
-// function clickMenu(){
-  // if(closeMenu == 'close')
-  //   return setShowMenu(null)
-
-  // setShowMenu('clicked')
-  // }
-
-  // function clickCloseMenu(){
-  //   setCloseMenu('close')
-  //   if(closeMenu == 'close')
-  //     setShowMenu(null)
-    
-  // }
-
   return (
     <div className='home-header-sec'>
       <div className='home-header'>

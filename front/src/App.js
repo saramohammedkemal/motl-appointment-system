@@ -21,8 +21,6 @@ import Appointments from './pages/admin/Appointments';
 import AdLogin from './pages/admin/AdLogin';
 import MainAd from './pages/admin/MainAd';
 
-// import { Navigate } from 'react-router-dom';
-
 const ProtectedRoute = ({check, redirectTo, children }) => {
   return check() ? children : <Navigate to={redirectTo} replace/>
 }

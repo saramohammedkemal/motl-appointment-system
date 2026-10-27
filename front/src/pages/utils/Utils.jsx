@@ -9,7 +9,6 @@ export const date = today.getDate()
 export const monthName = months[today.getMonth()]
 export const year = today.getFullYear()
 
-//  helper to format any date correctly as YYYY-MM-DD
 function formatDate(dateObj) {
     const y = dateObj.getFullYear()
     const m = String(dateObj.getMonth() + 1).padStart(2, '0')

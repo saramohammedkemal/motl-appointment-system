@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import AdminLayout from '../../components/AdminLayout'
 import PagesHead from './PagesHead'
 import AdSidebar from './AdSidebar'
 import api from '../../utils/api'

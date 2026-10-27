@@ -9,7 +9,7 @@ function VerifyCode() {
   const code = location.state?.code
 
   const appointmentFor = localStorage.getItem('appointmentFor')
-  localStorage.setItem('phone', phone)
+  // localStorage.setItem('phone', phone)
   const navigate = useNavigate()
   const [digit1, setD1] = useState('')
   const [digit2, setD2] = useState('')
@@ -28,7 +28,9 @@ function VerifyCode() {
       {return navigate('/seappointment', {
         state: {phone, appointmentFor}
       })}
-       return navigate('/register')
+        navigate('/register',{
+        state: {phone}
+       })
   }
 
   function handleInput(e) {

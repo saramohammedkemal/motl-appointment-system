@@ -1,4 +1,3 @@
-import React, { useState } from 'react'
 import '../css/appointment.css'
 import { useNavigate } from 'react-router-dom'
 import Header from './Header'
@@ -6,9 +5,7 @@ function CheckApp() {
 
   const navigate = useNavigate()
   const token = localStorage.getItem('token')
-  const [appoint, setappoint] = useState(null)
   
-  // localStorage.setItem('appoint', appoint)
   function handleclick(app){
     if(app === 'other'){
       localStorage.setItem('appointmentFor', 'for-other-appointment')
@@ -17,7 +14,6 @@ function CheckApp() {
     localStorage.setItem('appointmentFor','self-appointment')
     navigate('/summary')
   }
-  // alert(appoint)
 
   return (
     <div className='box-section'>

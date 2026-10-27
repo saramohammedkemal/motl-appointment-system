@@ -14,30 +14,32 @@ function Summary() {
     const date = localStorage.getItem('appDate')
     const time = localStorage.getItem('appTime')
     const token = localStorage.getItem('token')
-    
-    async function confirm(){
-       try {
-         const response = await api.post('/user/appointment',{
-            service:service,
-            branch:branch,
-            date:date,
-            time:time,
-            appointmentFor: appointmentFor || null
-        },{
-            headers: token
-        })
-        localStorage.setItem('createdAt', JSON.stringify(response.data.createdAt))
-        localStorage.setItem('selectedBranch',  JSON.stringify(response.data.branch))
-        localStorage.setItem('queueNumber', JSON.stringify(response.data.queueNumber))
-        const queueNumber = JSON.parse(localStorage.getItem('queueNumber'))
-        const queue = `${brCode} - ${queueNumber}`
-        localStorage.setItem('queue', queue)
-        localStorage.setItem('userAppData', JSON.stringify(response.data))        
-        
-        navigate('/queue')
-       } catch (error) {
-       console.log(error.message);
-       }
+
+    async function confirm() {
+
+        try {
+            const response = await api.post('/user/appointment', {
+                service: service,
+                branch: branch,
+                date: date,
+                time: time,
+                appointmentFor: appointmentForOther || null
+
+            }, {
+                headers: token
+            })
+            localStorage.setItem('createdAt', JSON.stringify(response.data.createdAt))
+            localStorage.setItem('selectedBranch', JSON.stringify(response.data.branch))
+            localStorage.setItem('queueNumber', JSON.stringify(response.data.queueNumber))
+            const queueNumber = JSON.parse(localStorage.getItem('queueNumber'))
+            const queue = `${brCode} - ${queueNumber}`
+            localStorage.setItem('queue', queue)
+            localStorage.setItem('userAppData', JSON.stringify(response.data))
+
+            navigate('/queue')
+        } catch (error) {
+            console.log(error.message);
+        }
     }
     return (
         <div className='box-section'>
@@ -45,21 +47,21 @@ function Summary() {
             <div className='booking-summary'>
                 <h1>Booking Summary</h1>
 
-                {appointmentFor === 'for-other-appointment' ? 
-                <section>
-                    <section className='sections'>
-                    <p className='title'>Appointment For</p>
-                    <h5>{appointmentForOther}</h5>
-                </section><hr/>
-                    <section className='sections'>
-                        <p className='title'>Booking Owner</p>
-                        <h5>{user}</h5>
-                    </section><hr />
-                    </section> : <section>  
+                {appointmentFor === 'for-other-appointment' ?
+                    <section>
                         <section className='sections'>
-                        <p className='title'>Full Name</p>
-                        <h5>{user}</h5>
-                    </section><hr />
+                            <p className='title'>Appointment For</p>
+                            <h5>{appointmentForOther}</h5>
+                        </section><hr />
+                        <section className='sections'>
+                            <p className='title'>Booking Owner</p>
+                            <h5>{user}</h5>
+                        </section><hr />
+                    </section> : <section>
+                        <section className='sections'>
+                            <p className='title'>Full Name</p>
+                            <h5>{user}</h5>
+                        </section><hr />
                     </section>}
 
                 <section className='booked-branch sections'>

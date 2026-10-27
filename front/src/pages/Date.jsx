@@ -6,7 +6,6 @@ import Header from './Header'
 import api from '../utils/api'
 import { fullDate, secondDay, thirdDay, fourthDay, fifthDay, sixthDay, date, today, days, dayName, monthName, year, secondDate, thirdDate, fourthDate, fifthDate, sixthDate } from './utils/Utils'
 
-//  max slots for each time
 const MAX_SLOTS = {
   '02:30': 5,
   '03:00': 15,
@@ -54,7 +53,6 @@ function DateFun() {
     navigate('/checkappointment')
   }
 
-  //  show slot label
   function slotLabel(time) {
     if (!appointmentDate) return 'Select date'
     if (slotCounts[time] === undefined) return 'Loading...'
@@ -63,7 +61,7 @@ function DateFun() {
     return `${available} slots left`
   }
 
-  //  get class for each slot div
+
   function slotClass(time, activeClass, inactiveClass) {
     if (!appointmentDate) return inactiveClass
     if (slotCounts[time] >= MAX_SLOTS[time]) return 'slot-full'
@@ -77,10 +75,7 @@ function DateFun() {
         <h1>Select Date and Time</h1>
         <section className='calender'>
           <h2>{monthName + ' ' + year}</h2>
-          {/* <select name="" id="">
-            <option value="gregorian">Gregorian</option>
-            <option value="ethiopian">Ethiopian</option>
-          </select> */}
+
         </section>
 
         <section className='day-date'>

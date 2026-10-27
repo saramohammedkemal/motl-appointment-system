@@ -15,8 +15,6 @@ const appointment = async (req, res) =>{
             const fixedDate = `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')}`
             console.log(fixedDate);
 
-
-//  fix time manually
 const fixTime = (time) => {
     const [timePart, period] = time.split(/(AM|PM)/)
     let [hours, minutes] = timePart.split(':')
@@ -60,7 +58,8 @@ const fixedTime = fixTime(time)
 const getAppointment = async(req, res) => {
    try {
      const branch = req.branch     
-    const select = `SELECT a.id, a.service, a.branch, a.date, a.time, a.queueNumber, a.status, a.createdAt,  CASE WHEN a.appointmentFor IS NOT NULL THEN a.appointmentFor ELSE CONCAT(u.firstName, ' ', u.lastName) END AS name FROM appointment a JOIN users u ON a.userId=u.id WHERE a.branch=? AND a.status != 'completed' ORDER BY a.date ASC, a.queueNumber ASC`
+    const select = `SELECT a.id, a.service, a.branch, a.date, a.time, a.queueNumber, a.status, a.createdAt,  CASE WHEN a.appointmentFor IS NOT NULL THEN a.appointmentFor ELSE CONCAT(u.firstName, ' ', u.lastName) END AS name FROM appointment a JOIN users u ON a.userId=u.id WHERE a.branch=? AND a.status != 'completed' ORDER BY a.date ASC and a.queueNumber ASC`
+    
     const [appInfn] = await connection.query(select, [branch])
     return res.status(StatusCodes.OK).json(appInfn)
    } catch (error) {

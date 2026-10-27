@@ -5,15 +5,15 @@ import '../css/terms.css'
 
 function NotFound() {
   return (
-    
-    <div className='box-section'>
-            <Header/>
 
-        <div className='not-found'>
-          Page Not Found
-        </div>
+    <div className='box-section'>
+      <Header />
+
+      <div className='not-found'>
+        Page Not Found
+      </div>
     </div>
-    
+
   )
 }
 

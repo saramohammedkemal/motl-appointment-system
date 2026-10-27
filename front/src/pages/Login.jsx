@@ -9,7 +9,7 @@ function Login() {
   const [password, setPassword] = useState('')
   const [message, setMessage] = useState(null)
   const navigate = useNavigate()
- 
+
   async function handleSubmit(e) {
     e.preventDefault()
 
@@ -20,14 +20,14 @@ function Login() {
     try {
       const response = await api.post('/user/login', {
         phone: phone, password: password
-      }, {withCredentials:true})
+      }, { withCredentials: true })
 
       localStorage.setItem('user', JSON.stringify(response.data.user))
       const user = JSON.parse(localStorage.getItem('user'))
       const token = response.data.token
       localStorage.setItem('token', token)
       localStorage.setItem('user', user.firstName + ' ' + user.lastName)
-      
+
       localStorage.setItem('isLoggedIn', 'true')
       navigate('/services')
     } catch (error) {

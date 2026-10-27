@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import PagesHead from './PagesHead'
-import { create } from 'axios'
 import api from '../../utils/api'
 import { useNavigate } from 'react-router-dom'
 

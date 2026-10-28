@@ -58,7 +58,7 @@ const fixedTime = fixTime(time)
 const getAppointment = async(req, res) => {
    try {
      const branch = req.branch     
-    const select = `SELECT a.id, a.service, a.branch, a.date, a.time, a.queueNumber, a.status, a.createdAt,  CASE WHEN a.appointmentFor IS NOT NULL THEN a.appointmentFor ELSE CONCAT(u.firstName, ' ', u.lastName) END AS name FROM appointment a JOIN users u ON a.userId=u.id WHERE a.branch=? AND a.status != 'completed' ORDER BY a.date ASC and a.queueNumber ASC`
+    const select = `SELECT a.id, a.service, a.branch, a.date, a.time, a.queueNumber, a.status, a.createdAt,  CASE WHEN a.appointmentFor IS NOT NULL THEN a.appointmentFor ELSE CONCAT(u.firstName, ' ', u.lastName) END AS name FROM appointment a JOIN users u ON a.userId=u.id WHERE a.branch=? AND a.status != 'completed' ORDER BY a.date ASC, a.time, a.queueNumber ASC`
     
     const [appInfn] = await connection.query(select, [branch])
     return res.status(StatusCodes.OK).json(appInfn)

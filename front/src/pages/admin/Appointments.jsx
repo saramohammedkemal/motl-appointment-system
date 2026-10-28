@@ -37,9 +37,7 @@ function statusColor(status){
   if(status === 'waiting') return {backgroundColor: 'red', color: 'white'}
    if (status === 'serving') return { backgroundColor: '#1E90FF', color: 'white' }
         if (status === 'completed') return { backgroundColor: '#28A745', color: 'white' }
-}
-
-    
+}   
 
   return (
     <div> 
@@ -94,7 +92,8 @@ function statusColor(status){
                      ))}
                     </tbody>
                   </table>
-                   </div>) }
+                   </div>
+                  ) }
                   </div>
                  </div>
                 

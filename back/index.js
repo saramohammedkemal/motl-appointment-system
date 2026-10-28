@@ -1,3 +1,5 @@
+require('dotenv').config()
+
 const express = require('express')
 const router = require('./router/router')
 const cookieParser = require('cookie-parser')
@@ -5,7 +7,6 @@ const adminRoute = require('./router/AdminRoute')
 const app = express()
 const cors = require('cors')
 const bodyParser = require('body-parser')
-require('dotenv').config()
 
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
@@ -20,5 +21,5 @@ app.use('/admin',adminRoute)
 
 
 app.listen(process.env.PORT,()=>{
-    console.log('connected');
+    console.log(`server running on port${process.env.PORT}`);
 })
